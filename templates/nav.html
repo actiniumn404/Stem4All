@@ -1,0 +1,26 @@
+{% set
+    nav_links = {
+        "About Us": "/about",
+        "Get Involved": "/get-involved",
+        "Team": "/team",
+        "Login": "/login"
+    }
+%}
+
+<nav>
+    <div class="left">
+        <div class="nav-logo-wrapper">
+            <img src="{{ url_for('static', filename='images/logo.png') }}"  alt="Stem4All Logo" class="nav-logo" />
+        </div>
+    </div>
+
+    <div class="right">
+        {% for display_text, hyperlink in nav_links.items() %}
+            <div class="nav-link-wrapper">
+                <a href="{{ hyperlink }}" class="nav-link">{{ display_text }}</a>
+            </div>
+        {% endfor %}
+    </div>
+
+
+</nav>

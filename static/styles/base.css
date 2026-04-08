@@ -1,0 +1,52 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --width: min(1200px, calc(100vw - 30px));
+    --padding: calc(50vw - var(--width) / 2);
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    font-size: var(--font-size-primary);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 10px var(--padding);
+    background: var(--nav-background);
+}
+
+nav .right{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav .left{
+    height: 100%;
+}
+
+nav .left .nav-logo-wrapper{
+    height: 100%;
+}
+
+.nav-logo{
+    height: 100%;
+}
+
+.nav-link{
+    color: var(--text-color-primary);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
