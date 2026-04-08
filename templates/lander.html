@@ -1,1 +1,26 @@
 {% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/lander.css') }}" />
+{% endblock %}
+
+{% block content %}
+
+<div class="hero">
+    <h1 class="hero-text">Making STEM Accessible For <span class="hero-text-highlight">All</span></h1>
+</div>
+
+<div class="section" id="mission">
+    <div class="section-header">
+        <h1 class="section-header-text">Our Mission</h1>
+    </div>
+
+    <div class="section-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        <button class="small-button">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+</div>
+
+{% endblock %}

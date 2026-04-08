@@ -1,3 +1,9 @@
+/*
+ * Contains everything that every page should have in terms of styles
+ * Base styles
+ * Navigation
+ */
+
 *, *::before, *::after{
     box-sizing: border-box;
 }
@@ -39,6 +45,8 @@ nav .left .nav-logo-wrapper{
 
 .nav-logo{
     height: 100%;
+    transition: scale 0.2s ease;
+    cursor: pointer;
 }
 
 .nav-link{
@@ -49,4 +57,30 @@ nav .left .nav-logo-wrapper{
 
 .nav-link:hover{
     text-decoration: underline;
+}
+
+.nav-logo-wrapper:hover .nav-logo{
+    scale: 1.15;
+}
+
+.section{
+    padding: 50px var(--padding);
+}
+
+.small-button{
+    background: var(--small-btn-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: inherit;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.small-button:hover{
+    opacity: 0.8;
+}
+
+.small-button:active{
+    opacity: 0.5;
 }

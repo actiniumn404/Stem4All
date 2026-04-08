@@ -1,5 +1,7 @@
 :root{
     --nav-background: whitesmoke;
     --text-color-primary: black;
-    --font-size-primary: 16px;
+    --font-size-primary: 18px;
+    --hero-background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Kc6SkOFSiK2my7O93xpotFRhwbCwtPMEzA&s");
+    --small-btn-color: #E9F5D6;
 }

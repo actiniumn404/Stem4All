@@ -1,0 +1,12 @@
+.hero{
+    padding: 200px var(--padding);
+    background: var(--hero-background);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero-text{
+    font-size: 48px;
+}
